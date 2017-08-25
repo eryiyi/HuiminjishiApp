@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--<ImageView android:layout_width="match_parent"-->
+               <!--android:src="@drawable/welcome_loading"-->
+               <!--android:scaleType="centerCrop"-->
+               <!--android:layout_height="match_parent"/>-->
+    <ImageView android:layout_width="wrap_content"
+               android:src="@drawable/logo_bordered_256w"
+               android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:text="欢迎来到丫丫保健服务平台"
+              android:textColor="@color/yellow01"
+              android:textSize="15sp"
+              android:layout_height="wrap_content"/>
+
+</LinearLayout>
