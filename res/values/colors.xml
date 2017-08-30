@@ -338,4 +338,5 @@
     <color name="bg_gray">#f0eff5</color>
 
     <color name="holo_black">#ff111111</color>
+    <color name="font_color_title">#576b95</color>
 </resources>

@@ -321,6 +321,7 @@
     <file url="file://$PROJECT_DIR$/res/layout/item_age.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_album_chance.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_friends_apply.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_grid_detail_image.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_grid_photos.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_grid_pic.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_img_del.xml" charset="UTF-8" />
@@ -397,6 +398,7 @@
     <file url="file://$PROJECT_DIR$/res/values/umeng_socialize_style.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/AlbumGridViewAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/AnimateFirstDisplayListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ImageGridViewAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemAgeAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemFriendsApplyAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemGroupMemberAdapter.java" charset="UTF-8" />
@@ -506,6 +508,7 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandLike.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandOrder.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/Order.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/RecordVO.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/pay/Base64.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/receiver/SMSBroadcastReceiver.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/ui/AbsActivity.java" charset="UTF-8" />

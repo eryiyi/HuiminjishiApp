@@ -11,15 +11,15 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.lbins.hmjs.R;
-import com.lbins.hmjs.adapter.ItemTuijianPeopleAdapter;
 import com.lbins.hmjs.adapter.NearbyPeopledapter;
+import com.lbins.hmjs.adapter.RecordAdapter;
 import com.lbins.hmjs.base.BaseActivity;
 import com.lbins.hmjs.base.InternetURL;
 import com.lbins.hmjs.dao.Emp;
-import com.lbins.hmjs.data.EmpsData;
+import com.lbins.hmjs.data.RecordVOData;
 import com.lbins.hmjs.library.PullToRefreshBase;
-import com.lbins.hmjs.library.PullToRefreshGridView;
 import com.lbins.hmjs.library.PullToRefreshListView;
+import com.lbins.hmjs.module.RecordVO;
 import com.lbins.hmjs.util.StringUtil;
 import com.lbins.hmjs.widget.CustomProgressDialog;
 import org.json.JSONObject;
@@ -37,8 +37,8 @@ public class MineRecordsActivity extends BaseActivity implements View.OnClickLis
     private ImageView btn_right;
 
     private PullToRefreshListView lstv;
-    private NearbyPeopledapter adapter;
-    List<Emp> lists = new ArrayList<Emp>();
+    private RecordAdapter adapter;
+    List<RecordVO> lists = new ArrayList<RecordVO>();
     private int pageIndex = 1;
     private static boolean IS_REFRESH = true;
     private ImageView search_null;
@@ -57,7 +57,7 @@ public class MineRecordsActivity extends BaseActivity implements View.OnClickLis
 
     private void initView() {
         this.findViewById(R.id.back).setOnClickListener(this);
-        this.findViewById(R.id.btn_right).setVisibility(View.GONE);
+        this.findViewById(R.id.btn_right).setVisibility(View.VISIBLE);
         title = (TextView) this.findViewById(R.id.title);
         title.setText("朋友圈");
         btn_right = (ImageView) this.findViewById(R.id.btn_right);
@@ -66,7 +66,7 @@ public class MineRecordsActivity extends BaseActivity implements View.OnClickLis
 
         search_null = (ImageView) this.findViewById(R.id.search_null);
         lstv = (PullToRefreshListView) this.findViewById(R.id.lstv);
-        adapter = new NearbyPeopledapter(lists, MineRecordsActivity.this);
+        adapter = new RecordAdapter(lists, MineRecordsActivity.this);
         lstv.setMode(PullToRefreshBase.Mode.BOTH);
         lstv.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
             @Override
@@ -96,12 +96,12 @@ public class MineRecordsActivity extends BaseActivity implements View.OnClickLis
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(lists.size() > (position-1)){
-                    Emp emp = lists.get(position-1);
-                    if (emp !=null) {
-                        Intent intent = new Intent(MineRecordsActivity.this , ProfileEmpActivity.class);
-                        intent.putExtra("empid", emp.getEmpid());
-                        startActivity(intent);
-                    }
+//                    RecordVO emp = lists.get(position-1);
+//                    if (emp !=null) {
+//                        Intent intent = new Intent(MineRecordsActivity.this , ProfileEmpActivity.class);
+//                        intent.putExtra("empid", emp.getEmpid());
+//                        startActivity(intent);
+//                    }
                 }
             }
         });
@@ -124,7 +124,7 @@ public class MineRecordsActivity extends BaseActivity implements View.OnClickLis
     private void getData() {
         StringRequest request = new StringRequest(
                 Request.Method.POST,
-                InternetURL.appTuijianEmpsOrYy,
+                InternetURL.appRecords,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String s) {
@@ -133,13 +133,18 @@ public class MineRecordsActivity extends BaseActivity implements View.OnClickLis
                                 JSONObject jo = new JSONObject(s);
                                 int code1 = jo.getInt("code");
                                 if (code1 == 200) {
-                                    EmpsData data = getGson().fromJson(s, EmpsData.class);
+                                    RecordVOData data = getGson().fromJson(s, RecordVOData.class);
                                     if (IS_REFRESH) {
                                         lists.clear();
                                     }
                                     lists.addAll(data.getData());
                                     lstv.onRefreshComplete();
                                     adapter.notifyDataSetChanged();
+                                    if(lists.size()>0){
+                                        search_null.setVisibility(View.GONE);
+                                    }else{
+                                        search_null.setVisibility(View.VISIBLE);
+                                    }
                                 }else {
                                     Toast.makeText(MineRecordsActivity.this, jo.getString("message"), Toast.LENGTH_SHORT).show();
                                 }

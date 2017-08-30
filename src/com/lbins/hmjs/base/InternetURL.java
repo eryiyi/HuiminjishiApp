@@ -139,4 +139,13 @@ public class InternetURL {
 
     //查询附近的会员
     public static final String appSearchNearby = INTERNAL + "appSearchNearby.do";
+
+    //朋友圈动态操作 删除
+    public static final String appRecordDelete = INTERNAL + "appRecordDelete.do";
+    //保存
+    public static final String appRecordSave = INTERNAL + "appRecordSave.do";
+    //查询一个
+    public static final String appRecordById = INTERNAL + "appRecordById.do";
+    //列表
+    public static final String appRecords = INTERNAL + "appRecords.do";
 }
