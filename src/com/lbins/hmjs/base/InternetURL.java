@@ -4,6 +4,7 @@ public class InternetURL {
 //    public static final String INTERNAL =  "http://114.215.121.7:8085/";
 //    public static final String INTERNAL =  "http://www.shandongguiren.com/";
     public static final String INTERNAL =  "http://157j1274e3.iask.in/";
+//    public static final String INTERNAL =  "http://192.168.1.189:8080/";
 
     public static final String QINIU_URL =  "http://oo4c4r583.bkt.clouddn.com/";
     //更新链接

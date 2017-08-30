@@ -52,10 +52,7 @@ import com.lbins.hmjs.dao.*;
 import com.lbins.hmjs.data.FriendsData;
 import com.lbins.hmjs.data.MsgCountData;
 import com.lbins.hmjs.data.VersonCodeObjData;
-import com.lbins.hmjs.fragment.FirstFragment;
-import com.lbins.hmjs.fragment.FourFragment;
-import com.lbins.hmjs.fragment.NearbyFragment;
-import com.lbins.hmjs.fragment.TwoFragment;
+import com.lbins.hmjs.fragment.*;
 import com.lbins.hmjs.module.MsgCount;
 import com.lbins.hmjs.module.VersonCodeObj;
 import com.lbins.hmjs.ui.LoginActivity;
@@ -75,7 +72,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener  
 
     private FirstFragment oneFragment;
     private TwoFragment twoFragment;
-    private NearbyFragment threeFragment;
+    private FindFragment threeFragment;
     private FourFragment fourFragment;
 
     private Button foot_one;
@@ -198,7 +195,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener  
                 break;
             case R.id.foot_three:
                 if (threeFragment == null) {
-                    threeFragment = new NearbyFragment();
+                    threeFragment = new FindFragment();
                     fragmentTransaction.add(R.id.content_frame, threeFragment);
                 } else {
                     fragmentTransaction.show(threeFragment);

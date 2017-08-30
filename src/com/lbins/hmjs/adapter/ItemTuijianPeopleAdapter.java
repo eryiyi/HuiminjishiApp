@@ -62,7 +62,7 @@ public class ItemTuijianPeopleAdapter extends BaseAdapter {
         if (cell != null) {
 
             if(!StringUtil.isNullOrEmpty(cell.getCover())){
-                imageLoader.displayImage(cell.getCover(), holder.item_cover, MeetLoveApplication.txOptions, animateFirstListener);
+                imageLoader.displayImage(cell.getCover(), holder.item_cover, MeetLoveApplication.options, animateFirstListener);
             }
             holder.item_nickname.setText(cell.getNickname());
         }

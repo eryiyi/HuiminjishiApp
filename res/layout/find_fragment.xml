@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bg_gray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            layout="@layout/top"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:padding="12dp"
+                  android:layout_marginTop="15dp"
+                  android:background="@drawable/btn_dark_shape"
+                  android:id="@+id/liner_quan"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="35dp"
+                   android:src="@drawable/avn"
+                   android:layout_marginLeft="8dp"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="朋友圈"
+                  android:drawableRight="@drawable/icon_small_list_more"
+                  android:layout_marginLeft="15dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/text_color"
+                  android:textSize="16sp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginTop="15dp"
+          android:background="@color/sign_mood_nomal_0"
+          android:layout_height="0.1dp"></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:padding="12dp"
+                  android:layout_marginTop="1dp"
+                  android:background="@drawable/btn_dark_shape"
+                  android:id="@+id/liner_nearyby"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="35dp"
+                   android:src="@drawable/afd"
+                   android:layout_marginLeft="8dp"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="附近"
+                  android:drawableRight="@drawable/icon_small_list_more"
+                  android:layout_marginLeft="15dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/text_color"
+                  android:textSize="16sp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:background="@color/sign_mood_nomal_0"
+          android:layout_height="0.1dp"></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:padding="12dp"
+                  android:layout_marginTop="1dp"
+                  android:background="@drawable/btn_dark_shape"
+                  android:id="@+id/liner_goods"
+                  android:layout_height="wrap_content">
+        <ImageView android:layout_width="35dp"
+                   android:src="@drawable/agg"
+                   android:layout_marginLeft="8dp"
+                   android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="商城"
+                  android:drawableRight="@drawable/icon_small_list_more"
+                  android:layout_marginLeft="15dp"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/text_color"
+                  android:textSize="16sp"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:background="@color/sign_mood_nomal_0"
+          android:layout_height="0.1dp"></View>
+</LinearLayout>
