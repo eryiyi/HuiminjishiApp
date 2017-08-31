@@ -1,10 +1,8 @@
 package com.lbins.hmjs.ui;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.AuthFailureError;
@@ -18,10 +16,8 @@ import com.lbins.hmjs.base.BaseActivity;
 import com.lbins.hmjs.base.InternetURL;
 import com.lbins.hmjs.dao.Emp;
 import com.lbins.hmjs.dao.Friends;
-import com.lbins.hmjs.dao.HappyHandJw;
 import com.lbins.hmjs.data.EmpData;
 import com.lbins.hmjs.data.FriendsData;
-import com.lbins.hmjs.data.HappyHandJwDatas;
 import com.lbins.hmjs.util.StringUtil;
 import com.lbins.hmjs.widget.CustomProgressDialog;
 import org.json.JSONObject;

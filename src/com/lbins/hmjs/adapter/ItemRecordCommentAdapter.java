@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.lbins.hmjs.MeetLoveApplication;
 import com.lbins.hmjs.R;
-import com.lbins.hmjs.module.HappyHandLike;
 import com.lbins.hmjs.module.RecordComment;
 import com.lbins.hmjs.util.StringUtil;
 import com.nostra13.universalimageloader.core.ImageLoader;

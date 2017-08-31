@@ -31,7 +31,6 @@ import com.lbins.hmjs.ui.ProfileEmpActivity;
 import com.lbins.hmjs.ui.SearchActivity;
 import com.lbins.hmjs.util.PinyinComparator;
 import com.lbins.hmjs.util.StringUtil;
-import com.lbins.hmjs.widget.CustomProgressDialog;
 import com.lbins.hmjs.widget.SideBar;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;

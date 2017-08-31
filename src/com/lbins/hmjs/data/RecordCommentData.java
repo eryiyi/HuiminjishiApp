@@ -1,6 +1,5 @@
 package com.lbins.hmjs.data;
 
-import com.lbins.hmjs.module.Province;
 import com.lbins.hmjs.module.RecordComment;
 
 import java.util.List;

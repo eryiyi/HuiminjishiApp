@@ -11,7 +11,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.lbins.hmjs.R;
 import com.lbins.hmjs.adapter.ItemSearchPeopleAdapter;
-import com.lbins.hmjs.adapter.ItemTuijianPeopleAdapter;
 import com.lbins.hmjs.base.BaseActivity;
 import com.lbins.hmjs.base.InternetURL;
 import com.lbins.hmjs.dao.Emp;

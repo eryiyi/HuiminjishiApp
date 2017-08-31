@@ -27,16 +27,12 @@ import com.lbins.hmjs.chat.db.InviteMessgeDao;
 import com.lbins.hmjs.chat.ui.ChatActivity;
 import com.lbins.hmjs.dao.DBHelper;
 import com.lbins.hmjs.dao.Emp;
-import com.lbins.hmjs.dao.HappyHandJw;
 import com.lbins.hmjs.data.EmpData;
-import com.lbins.hmjs.data.HappyHandJwDatas;
 import com.lbins.hmjs.ui.PayEmpRzActivity;
 import com.lbins.hmjs.util.StringUtil;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

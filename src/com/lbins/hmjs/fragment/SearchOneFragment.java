@@ -18,16 +18,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.lbins.hmjs.R;
 import com.lbins.hmjs.base.BaseFragment;
-import com.lbins.hmjs.module.HappyHandLike;
 import com.lbins.hmjs.ui.SearchPeopleActivity;
 import com.lbins.hmjs.util.StringUtil;
-import com.lbins.hmjs.widget.PopAgeWindow;
-import com.lbins.hmjs.widget.PopEducationWindow2;
-import com.lbins.hmjs.widget.PopHeightlWindow;
-import com.lbins.hmjs.widget.PopMarryWindow2;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class SearchOneFragment extends BaseFragment implements View.OnClickListener {
     private View view;

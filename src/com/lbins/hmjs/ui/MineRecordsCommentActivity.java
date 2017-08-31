@@ -1,9 +1,6 @@
 package com.lbins.hmjs.ui;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.View;

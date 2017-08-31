@@ -1,8 +1,6 @@
 package com.lbins.hmjs.module;
 
-import com.lbins.hmjs.dao.HappyHandJw;
 import com.lbins.hmjs.dao.HappyHandMessage;
-import com.lbins.hmjs.dao.HappyHandNews;
 import com.lbins.hmjs.dao.HappyHandNotice;
 
 import java.util.List;
