@@ -18,6 +18,25 @@ public class RecordVO {
     private String nickname;
     private String cover;
 
+    private int commentNum;
+    private int favourNum;
+
+    public int getCommentNum() {
+        return commentNum;
+    }
+
+    public void setCommentNum(int commentNum) {
+        this.commentNum = commentNum;
+    }
+
+    public int getFavourNum() {
+        return favourNum;
+    }
+
+    public void setFavourNum(int favourNum) {
+        this.favourNum = favourNum;
+    }
+
     public String getRecord_id() {
         return record_id;
     }

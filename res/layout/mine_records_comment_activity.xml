@@ -34,4 +34,19 @@
                 android:headerDividersEnabled="false"
                 android:smoothScrollbar="true"/>
     </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:padding="6dp"
+                  android:layout_height="wrap_content">
+        <EditText android:layout_width="wrap_content"
+                  android:layout_weight="1"
+                  android:id="@+id/content"
+                  android:textColor="@color/text_color"
+                  android:hint="我也来说两句"
+                  android:layout_height="wrap_content"/>
+        <Button android:layout_width="60dp"
+                android:text="确定"
+                android:id="@+id/btn"
+                android:textColor="@color/font_color_title"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
 </LinearLayout>

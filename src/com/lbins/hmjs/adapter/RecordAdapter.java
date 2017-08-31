@@ -3,6 +3,8 @@ package com.lbins.hmjs.adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,6 +74,9 @@ public class RecordAdapter extends BaseAdapter {
             holder.cover = (ImageView) convertView.findViewById(R.id.cover);
             holder.nickname = (TextView) convertView.findViewById(R.id.nickname);
             holder.cont = (TextView) convertView.findViewById(R.id.cont);
+            holder.dateline = (TextView) convertView.findViewById(R.id.dateline);
+            holder.comment = (TextView) convertView.findViewById(R.id.comment);
+            holder.favour = (TextView) convertView.findViewById(R.id.favour);
             holder.gridview = (PictureGridview) convertView.findViewById(R.id.gridview);
             convertView.setTag(holder);
         } else {
@@ -83,11 +88,20 @@ public class RecordAdapter extends BaseAdapter {
                 holder.nickname.setText(cell.getNickname());
             }
             if(!StringUtil.isNullOrEmpty(cell.getRecord_cont())){
+                holder.cont.setVisibility(View.VISIBLE);
                 holder.cont.setText(cell.getRecord_cont());
+            }else{
+                holder.cont.setVisibility(View.GONE);
+            }
+            if(!StringUtil.isNullOrEmpty(cell.getRecord_dateline())){
+                holder.dateline.setText(cell.getRecord_dateline());
             }
             if(!StringUtil.isNullOrEmpty(cell.getCover())){
                 imageLoader.displayImage(cell.getCover(), holder.cover, MeetLoveApplication.txOptions, animateFirstListener);
             }
+            holder.comment.setText(String.valueOf(cell.getCommentNum()));
+            holder.favour.setText(String.valueOf(cell.getFavourNum()));
+            holder.gridview.setSelector(new ColorDrawable(Color.TRANSPARENT));
             if(!StringUtil.isNullOrEmpty(cell.getRecord_pic())){
                 String picStr = cell.getRecord_pic();
                 if(!StringUtil.isNullOrEmpty(picStr) && !",".equals(picStr)){
@@ -113,6 +127,31 @@ public class RecordAdapter extends BaseAdapter {
                     });
                 }
             }
+
+            holder.cover.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickContentItemListener.onClickContentItem(position, 1, null);
+                }
+            });
+            holder.nickname.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickContentItemListener.onClickContentItem(position, 1, null);
+                }
+            });
+            holder.comment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickContentItemListener.onClickContentItem(position, 2, null);
+                }
+            });
+            holder.favour.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onClickContentItemListener.onClickContentItem(position, 3, null);
+                }
+            });
         }
         return convertView;
     }
@@ -121,6 +160,9 @@ public class RecordAdapter extends BaseAdapter {
         ImageView cover;
         TextView nickname;
         TextView cont;
+        TextView dateline;
+        TextView comment;
+        TextView favour;
         PictureGridview gridview;
     }
 

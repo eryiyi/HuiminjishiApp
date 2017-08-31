@@ -3,8 +3,8 @@ package com.lbins.hmjs.base;
 public class InternetURL {
 //    public static final String INTERNAL =  "http://114.215.121.7:8085/";
 //    public static final String INTERNAL =  "http://www.shandongguiren.com/";
-    public static final String INTERNAL =  "http://157j1274e3.iask.in/";
-//    public static final String INTERNAL =  "http://192.168.1.189:8080/";
+//    public static final String INTERNAL =  "http://157j1274e3.iask.in/";
+    public static final String INTERNAL =  "http://192.168.0.102:8080/";
 
     public static final String QINIU_URL =  "http://oo4c4r583.bkt.clouddn.com/";
     //更新链接
@@ -148,4 +148,13 @@ public class InternetURL {
     public static final String appRecordById = INTERNAL + "appRecordById.do";
     //列表
     public static final String appRecords = INTERNAL + "appRecords.do";
+
+    //评论
+    public static final String appRecordCommentSave = INTERNAL + "appRecordCommentSave.do";
+    //点赞
+    public static final String appRecordFavourSave = INTERNAL + "appRecordFavourSave.do";
+    //评论列表
+    public static final String appRecordsComment = INTERNAL + "appRecordsComment.do";
+    //点赞列表
+    public static final String appRecordsFavour = INTERNAL + "appRecordsFavour.do";
 }

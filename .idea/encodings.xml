@@ -336,6 +336,7 @@
     <file url="file://$PROJECT_DIR$/res/layout/item_pop_select_quite.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_pop_select_rzxf.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_pop_select_suggest.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_record_comment.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_tuijian_group.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_tuijian_people.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/jwdx_msg_dialog.xml" charset="UTF-8" />
@@ -410,6 +411,7 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemNewsAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemNoticesAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemPhotosAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemRecordCommentAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemSearchPeopleAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemTuijianGroupAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemTuijianPeopleAdapter.java" charset="UTF-8" />

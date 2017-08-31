@@ -6,13 +6,13 @@
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
 
-   <ImageView android:layout_width="60dp"
+   <ImageView android:layout_width="45dp"
               android:id="@+id/cover"
               android:src="@drawable/default_cover1"
-              android:layout_height="60dp"/>
+              android:layout_height="45dp"/>
     <TextView android:layout_width="wrap_content"
-              android:text="昵称"
-              android:layout_marginLeft="6dp"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="8dp"
               android:layout_marginTop="3dp"
               android:id="@+id/nickname"
               android:layout_toRightOf="@+id/cover"
@@ -22,19 +22,23 @@
     <RelativeLayout android:layout_width="wrap_content"
                     android:layout_toRightOf="@+id/cover"
                     android:layout_below="@+id/nickname"
-                    android:layout_marginLeft="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/relate_one"
                     android:layout_marginTop="3dp"
                     android:layout_height="wrap_content">
         <TextView android:layout_width="wrap_content"
-                  android:text="内容"
                   android:id="@+id/cont"
                   android:textColor="@color/text_color"
-                  android:textSize="15sp"
+                  android:textSize="14sp"
                   android:layout_height="wrap_content"/>
         <com.lbins.hmjs.widget.PictureGridview
                 android:numColumns="3"
+                android:layout_marginTop="6dp"
                 android:layout_below="@+id/cont"
                 android:id="@+id/gridview"
+                android:verticalSpacing="3dp"
+                android:horizontalSpacing="3dp"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content">
         </com.lbins.hmjs.widget.PictureGridview>
@@ -44,5 +48,34 @@
                    <!--android:scaleType="centerCrop"-->
                    <!--android:src="@drawable/no_pic"-->
                    <!--android:layout_height="wrap_content"/>-->
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/cover"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/relate_one"
+                    android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+                  android:textColor="@color/textColortwo"
+                  android:textSize="13sp"
+                  android:id="@+id/dateline"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/comment"
+                  android:textSize="13sp"
+                  android:drawablePadding="6dp"
+                  android:textColor="@color/textColortwo"
+                  android:layout_centerHorizontal="true"
+                  android:drawableLeft="@drawable/icon_little_h_comment"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content"
+                  android:id="@+id/favour"
+                  android:textColor="@color/textColortwo"
+                  android:drawablePadding="6dp"
+                  android:textSize="13sp"
+                  android:layout_alignParentRight="true"
+                  android:drawableLeft="@drawable/icon_little_h_good"
+                  android:layout_height="wrap_content"/>
     </RelativeLayout>
 </RelativeLayout>
