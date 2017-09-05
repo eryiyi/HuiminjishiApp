@@ -13,6 +13,7 @@ import com.lbins.hmjs.base.BaseFragment;
 import com.lbins.hmjs.ui.MineRecordsActivity;
 import com.lbins.hmjs.ui.NearbyActivity;
 import com.lbins.hmjs.ui.SearchActivity;
+import com.lbins.hmjs.ui.ShangchengActivity;
 
 /**
  * Created by zhl on 2016/7/1.
@@ -80,7 +81,7 @@ public class FindFragment extends BaseFragment implements View.OnClickListener  
             case R.id.liner_goods:
             {
                 //商城
-                Intent intent = new Intent(getActivity() , NearbyActivity.class);
+                Intent intent = new Intent(getActivity() , ShangchengActivity.class);
                 startActivity(intent);
             }
             break;

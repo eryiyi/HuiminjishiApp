@@ -50,12 +50,15 @@ import com.lbins.hmjs.chat.ui.GroupsActivity;
 import com.lbins.hmjs.chat.util.SharePrefConstant;
 import com.lbins.hmjs.dao.*;
 import com.lbins.hmjs.data.FriendsData;
+import com.lbins.hmjs.data.GoodsTypeData;
 import com.lbins.hmjs.data.MsgCountData;
 import com.lbins.hmjs.data.VersonCodeObjData;
 import com.lbins.hmjs.fragment.FindFragment;
 import com.lbins.hmjs.fragment.FirstFragment;
 import com.lbins.hmjs.fragment.FourFragment;
 import com.lbins.hmjs.fragment.TwoFragment;
+import com.lbins.hmjs.module.GoodsType;
+import com.lbins.hmjs.module.LxClass;
 import com.lbins.hmjs.module.MsgCount;
 import com.lbins.hmjs.module.VersonCodeObj;
 import com.lbins.hmjs.ui.LoginActivity;
@@ -131,6 +134,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener  
         PushManager.startWork(getApplicationContext(),
                 PushConstants.LOGIN_TYPE_API_KEY,
                 Utils.getMetaValue(MainActivity.this, "api_key"));
+
+        getGoodsType();
     }
 
     private Dialog picAddDialog;
@@ -1067,5 +1072,58 @@ public class MainActivity extends BaseActivity implements View.OnClickListener  
         });
     }
 
+    //商品分类
+    public static List<GoodsType> listGoodsType = new ArrayList<GoodsType>();
+    private List<LxClass>  listClasses = new ArrayList<LxClass>();
+    private void getGoodsType() {
+        StringRequest request = new StringRequest(
+                Request.Method.POST,
+                InternetURL.GET_GOODS_TYPE_URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String s) {
+                        if (StringUtil.isJson(s)) {
+                            try {
+                                JSONObject jo = new JSONObject(s);
+                                int code1 = jo.getInt("code");
+                                if (code1 == 200) {
+                                    GoodsTypeData data = getGson().fromJson(s, GoodsTypeData.class);
+                                    List<GoodsType> listsgoodstype = new ArrayList<GoodsType>();
+                                    listsgoodstype.clear();
+                                    listsgoodstype.addAll(data.getData());
+                                    listGoodsType.addAll(listsgoodstype);
+                                } else {
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+
+                        } else {
+                        }
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError volleyError) {
+
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+                return params;
+            }
+
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("Content-Type", "application/x-www-form-urlencoded");
+                return params;
+            }
+        };
+        getRequestQueue().add(request);
+    }
 
 }

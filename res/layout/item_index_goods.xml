@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:background="@drawable/zhuye_item_select"
+              android:layout_width="match_parent"
+              android:layout_height="120dp">
+
+    <ImageView
+            android:id="@+id/cover"
+            android:scaleType="centerCrop"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+    <TextView android:layout_width="wrap_content"
+             android:layout_marginLeft="8dp"
+             android:layout_marginTop="8dp"
+             android:layout_toRightOf="@+id/cover"
+             android:textColor="@color/text_color"
+             android:textSize="16sp"
+             android:id="@+id/name"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_marginLeft="8dp"
+              android:layout_marginTop="3dp"
+              android:layout_below="@+id/name"
+              android:layout_toRightOf="@+id/cover"
+              android:textColor="@color/text_color_two"
+              android:textSize="14sp"
+              android:id="@+id/typeName"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/textColortwo"
+              android:textSize="16sp"
+              android:singleLine="true"
+              android:layout_toRightOf="@+id/cover"
+              android:layout_marginLeft="8dp"
+              android:layout_alignParentBottom="true"
+              android:id="@+id/money_one"
+              android:layout_height="wrap_content"/>
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/text_color_two"
+              android:textSize="13sp"
+              android:singleLine="true"
+              android:layout_toRightOf="@+id/money_one"
+              android:layout_marginLeft="8dp"
+              android:layout_alignParentBottom="true"
+              android:id="@+id/money_two"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:textColor="@color/text_color_two"
+              android:textSize="13sp"
+              android:layout_alignParentRight="true"
+              android:layout_marginLeft="8dp"
+              android:layout_alignParentBottom="true"
+              android:id="@+id/sale_num"
+              android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/main"
+              android:background="@color/main_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="55dp"
+                    android:layout_height="wrap_content">
+        <com.lbins.hmjs.widget.ContentListView
+                android:id="@+id/lstv"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/home_item_shadow"
+                android:dividerHeight="0.5dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:smoothScrollbar="true"/>
+
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:focusable="true"
+                    android:id="@+id/top_header"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="@dimen/top_title_height">
+
+        <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_bg_gray" />
+
+        <ImageView android:layout_width="wrap_content"
+                   android:src="@drawable/icon_more"
+                   android:id="@+id/btn_favour"
+                   android:onClick="onTopMenuPopupButtonClick"
+                   android:padding="6dp"
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_height="wrap_content"/>
+
+        <ImageView android:layout_width="wrap_content"
+                   android:id="@+id/btn_share"
+                   android:padding="6dp"
+                   android:layout_centerVertical="true"
+                   android:layout_toLeftOf="@+id/btn_favour"
+                   android:src="@drawable/icon_car"
+                   android:textColor="@color/white"
+                   android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:id="@+id/bottom_liner"
+                  android:layout_alignParentBottom="true"
+                  android:gravity="center">
+        <TextView android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:text="购物车"
+                  android:background="@drawable/btn_red_shape"
+                  android:padding="5dp"
+                  android:id="@+id/foot_goods"
+                  android:gravity="center"
+                  android:layout_weight="0.6"
+                  android:textColor="@color/white"/>
+
+        <View android:layout_width="0.1dp"
+              android:background="@color/white"
+              android:layout_height="wrap_content"></View>
+
+        <Button android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="加入购物车"
+                android:background="@drawable/btn_red_shape"
+                android:id="@+id/foot_cart"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"/>
+        <View android:layout_width="0.1dp"
+              android:background="@color/white"
+              android:layout_height="wrap_content"></View>
+        <Button android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="马上买"
+                android:background="@drawable/btn_red_shape"
+                android:id="@+id/foot_order"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                />
+    </LinearLayout>
+
+</RelativeLayout>

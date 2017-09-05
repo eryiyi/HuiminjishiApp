@@ -2,6 +2,7 @@ package com.lbins.hmjs.dao;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import com.lbins.hmjs.module.ShoppingCart;
 import de.greenrobot.dao.query.QueryBuilder;
 
 import java.util.List;
@@ -23,6 +24,7 @@ public class DBHelper {
     private HappyHandNewsDao happyHandNewsDao;
     private HappyHandNoticeDao happyHandNoticeDao;
     private HappyHandGroupDao happyHandGroupDao;
+    private ShoppingCartDao shoppingCartDao;
 
     private DBHelper() {
     }
@@ -33,7 +35,7 @@ public class DBHelper {
             if (mContext == null) {
                 mContext = context;
             }
-            helper = new DaoMaster.DevOpenHelper(context, "huimin_jishi_hm_db_t_20170727", null);
+            helper = new DaoMaster.DevOpenHelper(context, "huimin_jishi_db_t_20170727", null);
             db = helper.getWritableDatabase();
             daoMaster = new DaoMaster(db);
             instance.empDao = daoMaster.newSession().getEmpDao();
@@ -43,6 +45,7 @@ public class DBHelper {
             instance.happyHandNewsDao = daoMaster.newSession().getHappyHandNewsDao();
             instance.happyHandNoticeDao = daoMaster.newSession().getHappyHandNoticeDao();
             instance.happyHandGroupDao = daoMaster.newSession().getHappyHandGroupDao();
+            instance.shoppingCartDao = daoMaster.newSession().getShoppingCartDao();
         }
         return instance;
     }
@@ -221,5 +224,72 @@ public class DBHelper {
 //        qb.where(EmpDao.Properties.Empid.eq(empid));
 //        empDao.deleteByKey(empid);//删除
 //    }
+
+
+    /**
+     * 插入数据
+     * @param test
+     */
+    public void addShoppingToTable(ShoppingCart test){
+        shoppingCartDao.insert(test);
+    }
+
+    //查询是否存在该商品
+    public boolean isSaved(String ID)
+    {
+        QueryBuilder<ShoppingCart> qb = shoppingCartDao.queryBuilder();
+        qb.where(ShoppingCartDao.Properties.Goods_id.eq(ID));
+        qb.buildCount().count();
+        return qb.buildCount().count() > 0 ? true : false;
+    }
+    //批量插入数据
+    public void saveTestList(List<ShoppingCart> tests){
+        shoppingCartDao.insertOrReplaceInTx(tests);
+    }
+
+    /**
+     * 查询所有的购物车
+     * @return
+     */
+    public List<ShoppingCart> getShoppingList(){
+        return shoppingCartDao.loadAll();
+    }
+
+    /**
+     * 插入或是更新数据
+     * @param test
+     * @return
+     */
+    public long saveShopping(ShoppingCart test){
+        return shoppingCartDao.insertOrReplace(test);
+    }
+
+    /**
+     * 更新数据
+     * @param test
+     */
+    public void updateTest(ShoppingCart test){
+        shoppingCartDao.update(test);
+    }
+
+    /**
+     * 删除所有数据--购物车
+     * */
+
+    public void deleteShopping(){
+        shoppingCartDao.deleteAll();
+    }
+    /**
+     * 删除数据根据goods_id
+     * */
+
+    public void deleteShoppingByGoodsId(String cartid){
+        QueryBuilder qb = shoppingCartDao.queryBuilder();
+        qb.where(ShoppingCartDao.Properties.Cartid.eq(cartid));
+        shoppingCartDao.deleteByKey(cartid);//删除
+    }
+
+
+
 
 }

@@ -409,4 +409,73 @@
     <string name="umeng_sharebutton_custom_sina">新浪</string>
 
 
+
+
+
+
+
+    <string name="share_success">分享成功啦</string>
+    <string name="share_error">分享失败啦</string>
+    <string name="share_cancel">分享取消了</string>
+    <string name="version_name">"检查版本"</string>
+    <string name="can_not_find_version_name">"没有最新版本信息"</string>
+
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="facebook_app_id">1266254913438718</string>
+
+
+    <string name="goods_favour_error_one">已收藏</string>
+    <string name="goods_favour_error_two">收藏失败</string>
+    <string name="goods_favour_success">收藏成功</string>
+    <string name="money">￥</string>
+    <string name="address_error_one">保存地址失败</string>
+    <string name="cart_error_one">请选择要购买的商品</string>
+    <string name="order_error_one">订单生成失败</string>
+    <string name="order_error_three">订单生成失败,您所购买的商品数量不够了</string>
+    <string name="order_error_four">订单生成失败,您的零钱不够支付，请重新选择支付方式！</string>
+    <string name="order_error_two">操作失败，如有疑问，请联系客服</string>
+    <string name="order_success">订单支付成功！</string>
+    <string name="item_count_adapter">共%1$s件商品</string>
+    <string name="item_money_adapter">合计：￥%1$.2f</string>
+    <string name="mine_cart_title">购物车(%1$.2s)</string>
+    <string name="no_address_error">没有收货地址哦亲</string>
+
+    <string name="cancel_order_success">成功取消订单</string>
+    <string name="cancel_order_error_one">取消订单失败</string>
+    <string name="cancel_order_error_two">请简要描述取消原因</string>
+
+    <string name="send_order_success">成功发货，等待买家签收</string>
+    <string name="send_order_error_one">发货失败，请稍后重试</string>
+
+    <string name="delete_order_success">成功删除订单</string>
+    <string name="goods_prices">￥%1$s</string>
+    <string name="goods_prices1">￥%1$s</string>
+    <string name="create_time">下单时间:</string>
+
+    <string name="add_cart_success">添加成功，在购物车等亲~</string>
+    <string name="add_cart_is">商品已加入购物车~</string>
+    <string name="prices">￥</string>
+    <string name="countPrices">合计：</string>
+    <string name="select_zero">没有了哦</string>
+    <string name="delete_success">"删除成功"</string>
+    <string name="delete_error">"删除失败，请稍后重试"</string>
+
+    <string name="reg_msg_one">请勾选注册协议！</string>
+    <string name="reg_msg_two">该手机号已经注册，请直接登录</string>
+    <string name="reg_msg_three">注册失败，请稍后重试</string>
+    <string name="reg_msg_four">注册成功，请登录</string>
+    <string name="please_wait">"请稍后"</string>
+    <string name="reg_error_one">"注册失败"</string>
+    <string name="caozuo_success">"操作成功！"</string>
+    <string name="caozuo_error_one">"操作失败，请稍后重试！"</string>
+    <string name="reg_error_two">"该手机号已经注册，请直接登录"</string>
+    <string name="reg_error_is_use">该手机号已经注册，请直接登录或者联系管理员修改密码！</string>
+    <string name="add_address_error_one">请输入收货人姓名</string>
+    <string name="add_address_error_two">请输入手机号</string>
+    <string name="add_address_error_three">请输入地址</string>
+
 </resources>

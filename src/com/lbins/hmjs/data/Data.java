@@ -4,7 +4,7 @@ package com.lbins.hmjs.data;
  * Created by liuzwei on 2015/1/12.
  */
 public class Data {
-    private String code;
+    private int code;
     private String success;
     private String message;
 
@@ -16,11 +16,11 @@ public class Data {
         this.message = message;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(int code) {
         this.code = code;
     }
 

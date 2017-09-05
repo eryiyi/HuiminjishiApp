@@ -148,8 +148,8 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
                 //点击微信支付
                 selectPayWay = 0;
                 Order order = new Order();
-                order.setEmpid(getGson().fromJson(getSp().getString("empid", ""), String.class));
-                order.setPayable_amount("10");
+                order.setEmp_id(getGson().fromJson(getSp().getString("empid", ""), String.class));
+                order.setPayable_amount("180");
                 order.setTrade_type("1");//0支付宝  1微信
                 order.setOrder_cont("丫丫保健会员认证服务费，微信支付");
                 order.setIs_dxk_order("0");//0认证服务费  1诚信保证金
@@ -163,8 +163,8 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
                 //支付宝支付
                 selectPayWay = 1;
                 Order order = new Order();
-                order.setEmpid(getGson().fromJson(getSp().getString("empid", ""), String.class));
-                order.setPayable_amount("10");
+                order.setEmp_id(getGson().fromJson(getSp().getString("empid", ""), String.class));
+                order.setPayable_amount("180");
                 order.setTrade_type("0");//0支付宝  1微信
                 order.setOrder_cont("丫丫保健会员认证服务费，支付宝支付");
                 order.setIs_dxk_order("0");//0认证服务费  1诚信保证金
@@ -220,7 +220,7 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("empid", order.getEmpid());
+                params.put("empid", order.getEmp_id());
                 params.put("payable_amount", order.getPayable_amount());
                 params.put("status", order.getStatus());
                 params.put("pay_status", order.getPay_status());
@@ -315,7 +315,7 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("empid", order.getEmpid());
+                params.put("empid", order.getEmp_id());
                 params.put("payable_amount", order.getPayable_amount());
                 params.put("status", order.getStatus());
                 params.put("pay_status", order.getPay_status());

@@ -66,6 +66,7 @@
 
     <color name="textColor">#333333</color>
     <color name="textColortwo">#c0c0c0</color>
+    <color name="text_color_two">#c0c0c0</color>
     <color name="nameColor">#ff397cbf</color>
     <color name="detail_back">#f7f7f7</color>
 
@@ -339,4 +340,9 @@
 
     <color name="holo_black">#ff111111</color>
     <color name="font_color_title">#576b95</color>
+    <color name="main_bg">#fafafa</color>
+    <color name="gray">#c9c8cd</color>
+    <color name="red_p">#ef8ebe</color>
+
+
 </resources>

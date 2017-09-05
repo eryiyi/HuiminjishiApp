@@ -1,6 +1,7 @@
 package com.lbins.hmjs.dao;
 
 import android.database.sqlite.SQLiteDatabase;
+import com.lbins.hmjs.module.ShoppingCart;
 import de.greenrobot.dao.AbstractDao;
 import de.greenrobot.dao.AbstractDaoSession;
 import de.greenrobot.dao.identityscope.IdentityScopeType;
@@ -24,6 +25,7 @@ public class DaoSession extends AbstractDaoSession {
     private final DaoConfig happyHandJwDaoConfig;
     private final DaoConfig friendsDaoConfig;
     private final DaoConfig happyHandGroupDaoConfig;
+    private final DaoConfig shoppingCartDaoConfig;
 
     private final EmpDao empDao;
     private final HappyHandMessageDao happyHandMessageDao;
@@ -33,9 +35,14 @@ public class DaoSession extends AbstractDaoSession {
     private final FriendsDao friendsDao;
     private final HappyHandGroupDao happyHandGroupDao;
 
+    private final ShoppingCartDao shoppingCartDao;
+
     public DaoSession(SQLiteDatabase db, IdentityScopeType type, Map<Class<? extends AbstractDao<?, ?>>, DaoConfig>
             daoConfigMap) {
         super(db);
+
+        shoppingCartDaoConfig = daoConfigMap.get(ShoppingCartDao.class).clone();
+        shoppingCartDaoConfig.initIdentityScope(type);
 
         empDaoConfig = daoConfigMap.get(EmpDao.class).clone();
         empDaoConfig.initIdentityScope(type);
@@ -66,6 +73,13 @@ public class DaoSession extends AbstractDaoSession {
         friendsDao = new FriendsDao(friendsDaoConfig, this);
         happyHandGroupDao = new HappyHandGroupDao(happyHandGroupDaoConfig, this);
 
+
+
+        shoppingCartDao = new ShoppingCartDao(shoppingCartDaoConfig, this);
+
+
+
+
         registerDao(Emp.class, empDao);
         registerDao(HappyHandMessage.class, happyHandMessageDao);
         registerDao(HappyHandNews.class, happyHandNewsDao);
@@ -73,6 +87,7 @@ public class DaoSession extends AbstractDaoSession {
         registerDao(HappyHandJw.class, happyHandJwDao);
         registerDao(Friends.class, friendsDao);
         registerDao(HappyHandGroup.class, happyHandGroupDao);
+        registerDao(ShoppingCart.class, shoppingCartDao);
     }
     
     public void clear() {
@@ -112,5 +127,11 @@ public class DaoSession extends AbstractDaoSession {
     public HappyHandGroupDao getHappyHandGroupDao() {
         return happyHandGroupDao;
     }
+
+
+    public ShoppingCartDao getShoppingCartDao() {
+        return shoppingCartDao;
+    }
+
 
 }

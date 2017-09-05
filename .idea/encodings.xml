@@ -52,6 +52,7 @@
     <file url="file://$PROJECT_DIR$/res/anim/slide_out_to_right.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/anim/slide_out_to_top.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/color/em_main_botton_text_color.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/color/popup_menu_text.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/em_actionbar_camera_icon.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/em_add.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-hdpi/em_add_public_group.png" charset="UTF-8" />
@@ -132,6 +133,9 @@
     <file url="file://$PROJECT_DIR$/res/drawable-ldpi/launcher.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-mdpi/em_unread_count_bg.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-mdpi/launcher.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/addphoto_button_pressed.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/dotc.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/dotn.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/em_add_public_group.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/em_chat_file_normal.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/em_chat_file_pressed.png" charset="UTF-8" />
@@ -157,8 +161,13 @@
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/em_to_group_details_normal.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/em_unread_count_bg.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/em_unread_dot.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/icon_bg_gray.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/icon_nodata.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/in.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/launcher.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/star.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/tel_order.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xhdpi/top_star_p.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/bigpic_verify_honesty.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/bigpic_verify_v.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/btn_big_active.png" charset="UTF-8" />
@@ -179,10 +188,19 @@
     <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/launcher.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/no_pic.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/pull_to_refresh_arrow.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/tabicon_contact.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-xxhdpi/tabicon_contact_p.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/analyze_empty_bg.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/bg_pop_item.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/bg_pop_pressed.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_blue_selector.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_dark_shape.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_jubao_normal_shape.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_jubao_pressed_shape.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/btn_red_blue_shape.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/btn_red_normal_shape.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/btn_red_press_shape.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/btn_red_shape.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_white_normal_shape.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_white_press_shape.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/btn_white_shape.xml" charset="UTF-8" />
@@ -226,13 +244,17 @@
     <file url="file://$PROJECT_DIR$/res/drawable/em_tab_chat_bg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/em_tab_contact_list_bg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/em_tab_setting_bg.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/et_bule_bg.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/et_bule_radio_bg.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/home_item_shadow.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/index_bg_back.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/indicator_bg_bottom.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/indicator_bg_top.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/jubao_shape.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/mm_listitem.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/mm_listitem_pressed.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/mm_listitem_simple.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/popmenu_bg.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/selector_set_number_check.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/show_head_toast_bg.9.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/drawable/umeng_socialize_back_icon.png" charset="UTF-8" />
@@ -263,6 +285,7 @@
     <file url="file://$PROJECT_DIR$/res/layout/choose_imageview.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/contact_item.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/custom_progress_dialog.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/dialog_pay_wuchang.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/em_activity_add_contact.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/em_activity_black_list.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/em_activity_call_option.xml" charset="UTF-8" />
@@ -318,20 +341,25 @@
     <file url="file://$PROJECT_DIR$/res/layout/em_widget_contact_item.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/foot.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/gallery_url.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/grid_image_item.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_age.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_album_chance.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_friends_apply.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_goods_comment.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_goods_detail_viewpage_xml.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_grid_detail_image.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_grid_photos.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_grid_pic.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_img_del.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_jwdx_apply.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_like.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_main_viewpage_xml.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_message.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_mine_groups.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_mine_messages.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_mine_news.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_mine_notices.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_mood_bq.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_pop_select_photo.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_pop_select_quite.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/item_pop_select_rzxf.xml" charset="UTF-8" />
@@ -341,8 +369,17 @@
     <file url="file://$PROJECT_DIR$/res/layout/item_tuijian_people.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/jwdx_msg_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/list_position.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/listview_footer.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/listview_item_layout.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/login_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/main_popmenu.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/main_popmenu_item.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_address_add_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_address_add_four_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_address_update_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_cart_activity.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_favours_xml.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/mine_order_activity.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_black_emp_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_delete_friends_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_delete_jw_dialog.xml" charset="UTF-8" />
@@ -351,6 +388,7 @@
     <file url="file://$PROJECT_DIR$/res/layout/msg_jwqq1_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_msg_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_msg_dialog2.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/msg_pay_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_reg_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_reply_login_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/msg_tel_dialog.xml" charset="UTF-8" />
@@ -370,13 +408,16 @@
     <file url="file://$PROJECT_DIR$/res/layout/pop_quite_suggest.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/pop_report.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/pop_update_pwr_photo.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/publish_comment_xml.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/publish_mood_gridview_item.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/pull_to_refresh_header.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/pull_to_refresh_header_horizontal.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/pull_to_refresh_header_vertical.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/reg_msg_activity.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/select_imageview.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/select_type_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/socialize_share_menu_item.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/layout/tel_pop_view.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/umeng_socialize_oauth_dialog.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/viewpage_itemview.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/res/layout/welcome.xml" charset="UTF-8" />
@@ -399,11 +440,17 @@
     <file url="file://$PROJECT_DIR$/res/values/umeng_socialize_style.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/AlbumGridViewAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/AnimateFirstDisplayListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/GoodsDetailViewPagerAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/GoodsTypeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/GoodsTypeIndexAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ImageGridViewAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemAgeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemCommentAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemFriendsApplyAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemGoodsAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemGroupMemberAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemHeightlAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemIndexGoodsGridviewAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemJwdxApplyAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemLikesAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemMessageAdapter.java" charset="UTF-8" />
@@ -415,8 +462,10 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemSearchPeopleAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemTuijianGroupAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ItemTuijianPeopleAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/MenuPopMenuAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/OnClickContentItemListener.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/Publish_mood_GridView_Adapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/ShangchengAdViewPagerAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/adapter/TuijianGroupdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/base/BaseActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/base/InternetURL.java" charset="UTF-8" />
@@ -484,8 +533,15 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/dao/HappyHandNewsDao.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/dao/HappyHandNotice.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/dao/HappyHandNoticeDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/dao/ShoppingCartDao.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/Data.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/DianPuFavourData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/MineAddressDATA.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/OrderInfoAndSignDATA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/OrdersSingleDATA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/OrdersVoDATA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/ShoppingAddressSingleDATA.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/data/SuccessData.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/gallery/EclairMotionEvent.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/gallery/GalleryViewPager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/gallery/UrlPagerAdapter.java" charset="UTF-8" />
@@ -503,14 +559,21 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/library/ViewCompat.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/Area.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/City.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/DianPuFavour.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/DxkAd.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/EmpGroupManager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandChoose.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandCxrz.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandHyrz.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandLike.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/HappyHandOrder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/LxClass.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/Order.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/OrderVo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/OrdersForm.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/RecordVO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/ShoppingAddress.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/module/ShoppingCart.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/pay/Base64.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/receiver/SMSBroadcastReceiver.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/ui/AbsActivity.java" charset="UTF-8" />
@@ -519,9 +582,14 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/ui/GalleryUrlActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/util/CommonDefine.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/util/Constants.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/util/DateUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/util/GuirenHttpUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/util/ImageUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/util/TimeUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/CircleImageView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/ClassifyGridview.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/ContentListView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/MenuPopMenu.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/NoScrollGridView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/PictureGridview.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/PopAgeProfileWindow.java" charset="UTF-8" />
@@ -537,6 +605,7 @@
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/SelectRzxfPopWindow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/SelectSuggestPopWindow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/SquareLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/TelPopWindow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/widget/ViewPageItemView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/lbins/hmjs/wxapi/WXPayEntryActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../easeui/res/drawable-hdpi/ease_voice_unread.png" charset="UTF-8" />
