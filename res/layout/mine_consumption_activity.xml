@@ -11,7 +11,6 @@
             layout="@layout/top"/>
 
     <TextView android:layout_width="wrap_content"
-              android:text="消费积分：1000"
               android:layout_gravity="center_horizontal"
               android:textColor="@color/red"
               android:padding="8dp"

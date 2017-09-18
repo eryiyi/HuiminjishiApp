@@ -363,7 +363,7 @@ public class RegUpdateActivity extends BaseActivity implements View.OnClickListe
         save("mobile", mobile.getText().toString());
         save("is_use", "1");
         save("rolestate", emp.getRolestate());
-        save("nickname", mobile.getText().toString().substring(7, 11));
+        save("nickname", nickname.getText().toString());
         save("cover", emp.getCover());
         save("provinceid", emp.getProvinceid());
         save("cityid", emp.getCityid());

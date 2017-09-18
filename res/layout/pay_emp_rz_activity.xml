@@ -112,20 +112,20 @@
                     android:background="@drawable/btn_big_active"
                     android:layout_height="wrap_content"/>
 
-            <Button android:layout_width="match_parent"
-                    android:padding="8dp"
-                    android:layout_below="@+id/pwr"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:text="支付宝支付"
-                    android:textStyle="bold"
-                    android:visibility="gone"
-                    android:id="@+id/btn_2"
-                    android:textSize="16sp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/btn_big_active"
-                    android:layout_height="wrap_content"/>
+            <!--<Button android:layout_width="match_parent"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:layout_below="@+id/pwr"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:text="支付宝支付"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/btn_2"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:background="@drawable/btn_big_active"-->
+                    <!--android:layout_height="wrap_content"/>-->
         </LinearLayout>
     </com.lbins.hmjs.widget.ReboundScrollView>
 </LinearLayout>

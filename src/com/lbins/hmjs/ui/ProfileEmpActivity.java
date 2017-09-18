@@ -330,7 +330,7 @@ public class ProfileEmpActivity extends BaseActivity implements View.OnClickList
             sign.setText(emp.getSign());
         }
         if(!StringUtil.isNullOrEmpty(emp.getCover())){
-            imageLoader.displayImage(emp.getCover(), cover, MeetLoveApplication.txOptions, animateFirstListener);
+            imageLoader.displayImage(emp.getCover(), cover, MeetLoveApplication.options, animateFirstListener);
         }
         if("0".equals(emp.getRolestate())){
             //技师

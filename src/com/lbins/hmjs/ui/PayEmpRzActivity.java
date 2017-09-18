@@ -56,7 +56,7 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
     private TextView title;
 
     private Button btn_1;
-    private Button btn_2;
+//    private Button btn_2;
 
     //---------------------------------支付开始----------------------------------------
     private static final int SDK_PAY_FLAG = 1;
@@ -129,10 +129,10 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
         title = (TextView) this.findViewById(R.id.title);
         title.setText("服务费支付");
         btn_1 = (Button) this.findViewById(R.id.btn_1);
-        btn_2 = (Button) this.findViewById(R.id.btn_2);
+//        btn_2 = (Button) this.findViewById(R.id.btn_2);
 
         btn_1.setOnClickListener(this);
-        btn_2.setOnClickListener(this);
+//        btn_2.setOnClickListener(this);
     }
 
     private int selectPayWay = 0;//0微信 1支付宝
@@ -149,7 +149,7 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
                 selectPayWay = 0;
                 Order order = new Order();
                 order.setEmp_id(getGson().fromJson(getSp().getString("empid", ""), String.class));
-                order.setPayable_amount("180");
+                order.setPayable_amount("10");
                 order.setTrade_type("1");//0支付宝  1微信
                 order.setOrder_cont("丫丫保健会员认证服务费，微信支付");
                 order.setIs_dxk_order("0");//0认证服务费  1诚信保证金
@@ -158,21 +158,21 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
                 goToPayWeixin(order);
             }
                 break;
-            case R.id.btn_2:
-            {
-                //支付宝支付
-                selectPayWay = 1;
-                Order order = new Order();
-                order.setEmp_id(getGson().fromJson(getSp().getString("empid", ""), String.class));
-                order.setPayable_amount("180");
-                order.setTrade_type("0");//0支付宝  1微信
-                order.setOrder_cont("丫丫保健会员认证服务费，支付宝支付");
-                order.setIs_dxk_order("0");//0认证服务费  1诚信保证金
-                order.setPay_status("0");
-                order.setStatus("0");
-                sendOrderToServer(order);
-            }
-                break;
+//            case R.id.btn_2:
+//            {
+//                //支付宝支付
+//                selectPayWay = 1;
+//                Order order = new Order();
+//                order.setEmp_id(getGson().fromJson(getSp().getString("empid", ""), String.class));
+//                order.setPayable_amount("10");
+//                order.setTrade_type("0");//0支付宝  1微信
+//                order.setOrder_cont("丫丫保健会员认证服务费，支付宝支付");
+//                order.setIs_dxk_order("0");//0认证服务费  1诚信保证金
+//                order.setPay_status("0");
+//                order.setStatus("0");
+//                sendOrderToServer(order);
+//            }
+//                break;
         }
     }
 
@@ -180,90 +180,90 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
     WxPayObj wxPayObj;
 
     //传order给服务器
-    private void sendOrderToServer(final Order order) {
-        StringRequest request = new StringRequest(
-                Request.Method.POST,
-                InternetURL.SEND_ORDER_TOSERVER,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String s) {
-                        if (StringUtil.isJson(s)) {
-                            try {
-                                JSONObject jo =  new JSONObject(s);
-                                String code = jo.getString("code");
-                                if (code.equals("200")) {
-                                    OrderInfoAndSignDATA data = getGson().fromJson(s, OrderInfoAndSignDATA.class);
-                                    //已经生成订单，等待支付，下面去支付
-                                    out_trade_no= data.getData().getOut_trade_no();
-                                    pay(data.getData());//调用支付接口
-                                }else{
-                                    showMsg(PayEmpRzActivity.this, jo.getString("message"));
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-
-                        } else {
-                            Toast.makeText(PayEmpRzActivity.this, "支付失败！", Toast.LENGTH_SHORT).show();
-                            finish();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError volleyError) {
-                        Toast.makeText(PayEmpRzActivity.this, "支付失败！", Toast.LENGTH_SHORT).show();
-                        finish();
-                    }
-                }
-        ) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("empid", order.getEmp_id());
-                params.put("payable_amount", order.getPayable_amount());
-                params.put("status", order.getStatus());
-                params.put("pay_status", order.getPay_status());
-                params.put("trade_type", order.getTrade_type());
-                params.put("is_dxk_order", order.getIs_dxk_order());
-                params.put("order_cont", order.getOrder_cont());
-                return params;
-            }
-
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("Content-Type", "application/x-www-form-urlencoded");
-                return params;
-            }
-        };
-        getRequestQueue().add(request);
-    }
+//    private void sendOrderToServer(final Order order) {
+//        StringRequest request = new StringRequest(
+//                Request.Method.POST,
+//                InternetURL.SEND_ORDER_TOSERVER,
+//                new Response.Listener<String>() {
+//                    @Override
+//                    public void onResponse(String s) {
+//                        if (StringUtil.isJson(s)) {
+//                            try {
+//                                JSONObject jo =  new JSONObject(s);
+//                                String code = jo.getString("code");
+//                                if (code.equals("200")) {
+//                                    OrderInfoAndSignDATA data = getGson().fromJson(s, OrderInfoAndSignDATA.class);
+//                                    //已经生成订单，等待支付，下面去支付
+//                                    out_trade_no= data.getData().getOut_trade_no();
+//                                    pay(data.getData());//调用支付接口
+//                                }else{
+//                                    showMsg(PayEmpRzActivity.this, jo.getString("message"));
+//                                }
+//                            } catch (JSONException e) {
+//                                e.printStackTrace();
+//                            }
+//
+//                        } else {
+//                            Toast.makeText(PayEmpRzActivity.this, "支付失败！", Toast.LENGTH_SHORT).show();
+//                            finish();
+//                        }
+//                    }
+//                },
+//                new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError volleyError) {
+//                        Toast.makeText(PayEmpRzActivity.this, "支付失败！", Toast.LENGTH_SHORT).show();
+//                        finish();
+//                    }
+//                }
+//        ) {
+//            @Override
+//            protected Map<String, String> getParams() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<String, String>();
+//                params.put("empid", order.getEmp_id());
+//                params.put("payable_amount", order.getPayable_amount());
+//                params.put("status", order.getStatus());
+//                params.put("pay_status", order.getPay_status());
+//                params.put("trade_type", order.getTrade_type());
+//                params.put("is_dxk_order", order.getIs_dxk_order());
+//                params.put("order_cont", order.getOrder_cont());
+//                return params;
+//            }
+//
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> params = new HashMap<String, String>();
+//                params.put("Content-Type", "application/x-www-form-urlencoded");
+//                return params;
+//            }
+//        };
+//        getRequestQueue().add(request);
+//    }
     //---------------------------------------------------------支付宝------------------------------------------
 
     /**
      * call alipay sdk pay. 调用SDK支付
      *
      */
-    public void pay(final OrderInfoAndSign orderInfoAndSign) {
-        Runnable payRunnable = new Runnable() {
-
-            @Override
-            public void run() {
-                PayTask alipay = new PayTask(PayEmpRzActivity.this);
-                Map<String, String> result = alipay.payV2(orderInfoAndSign.getOrderInfo(), true);
-                Log.i("msp", result.toString());
-                Message msg = new Message();
-                msg.what = SDK_PAY_FLAG;
-                msg.obj = result;
-                mHandler.sendMessage(msg);
-            }
-        };
-
-        // 必须异步调用
-        Thread payThread = new Thread(payRunnable);
-        payThread.start();
-    }
+//    public void pay(final OrderInfoAndSign orderInfoAndSign) {
+//        Runnable payRunnable = new Runnable() {
+//
+//            @Override
+//            public void run() {
+//                PayTask alipay = new PayTask(PayEmpRzActivity.this);
+//                Map<String, String> result = alipay.payV2(orderInfoAndSign.getOrderInfo(), true);
+//                Log.i("msp", result.toString());
+//                Message msg = new Message();
+//                msg.what = SDK_PAY_FLAG;
+//                msg.obj = result;
+//                mHandler.sendMessage(msg);
+//            }
+//        };
+//
+//        // 必须异步调用
+//        Thread payThread = new Thread(payRunnable);
+//        payThread.start();
+//    }
 
 
     //----------------微信---------------
@@ -272,7 +272,7 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
         api.registerApp(InternetURL.WEIXIN_APPID);
         StringRequest request = new StringRequest(
                 Request.Method.POST,
-                InternetURL.SEND_ORDER_TOSERVER_WX,
+                InternetURL.orderSaveWxEmpRz,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String s) {
@@ -315,8 +315,9 @@ public class PayEmpRzActivity extends BaseActivity implements View.OnClickListen
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("empid", order.getEmp_id());
+                params.put("emp_id", order.getEmp_id());
                 params.put("payable_amount", order.getPayable_amount());
+                params.put("payable_amount_all", order.getPayable_amount());
                 params.put("status", order.getStatus());
                 params.put("pay_status", order.getPay_status());
                 params.put("trade_type", order.getTrade_type());

@@ -8,7 +8,7 @@
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            layout="@layout/top"/>
+            layout="@layout/top_liner"/>
     <com.lbins.hmjs.widget.ReboundScrollView android:layout_width="match_parent"
                                               android:layout_height="match_parent">
         <LinearLayout android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             <RelativeLayout android:layout_width="match_parent"
                             android:background="#898989"
                             android:layout_height="220dp">
-                <com.lbins.myapp.widget.CircleImageView
+                <com.lbins.hmjs.widget.CircleImageView
                         android:src="@drawable/ic_launcher"
                         android:layout_width="60dp"
                         android:layout_marginTop="20dp"
@@ -45,16 +45,13 @@
                                     android:layout_marginRight="8dp"
                                     android:gravity="center|right"
                                     android:layout_height="wrap_content">
-                        <ImageView android:layout_width="wrap_content"
-                                   android:src="@drawable/ic_launcher"
-                                   android:id="@+id/img_one"
-                                   android:layout_height="wrap_content"/>
+
                         <RelativeLayout android:layout_width="wrap_content"
                                         android:padding="8dp"
                                         android:layout_marginLeft="8dp"
                                         android:layout_height="wrap_content">
                             <TextView android:layout_width="wrap_content"
-                                      android:text="消费积分"
+                                      android:text="余额"
                                       android:textStyle="bold"
                                       android:id="@+id/txt_one"
                                       android:textColor="@color/white"
@@ -78,10 +75,7 @@
                                   android:layout_marginLeft="8dp"
                                   android:gravity="center|left"
                                   android:layout_height="wrap_content">
-                        <ImageView android:layout_width="wrap_content"
-                                   android:src="@drawable/ic_launcher"
-                                   android:id="@+id/img_two"
-                                   android:layout_height="wrap_content"/>
+
                         <RelativeLayout android:layout_width="wrap_content"
                                         android:padding="8dp"
                                         android:layout_marginLeft="8dp"
@@ -110,7 +104,8 @@
                           android:background="@drawable/btn_gray_shape"
                           android:layout_height="wrap_content">
                 <TextView android:layout_width="wrap_content"
-                          android:text="消费积分"
+                          android:text="消费记录"
+                          android:layout_centerVertical="true"
                           android:textSize="18sp"
                           android:textStyle="bold"
                           android:layout_gravity="center"
@@ -134,15 +129,17 @@
             <RelativeLayout android:layout_width="match_parent"
                           android:orientation="horizontal"
                           android:padding="12dp"
+                          android:visibility="gone"
                           android:layout_marginTop="8dp"
                           android:id="@+id/liner_profile_count"
                           android:background="@drawable/btn_gray_shape"
                           android:layout_height="wrap_content">
                 <TextView android:layout_width="wrap_content"
-                          android:text="通用积分"
+                          android:text="余额"
                           android:textSize="18sp"
                           android:textStyle="bold"
                           android:layout_gravity="center"
+                          android:layout_centerVertical="true"
                           android:gravity="center|left"
                           android:textColor="@color/text_color"
                           android:layout_height="wrap_content"/>
@@ -200,6 +197,7 @@
                           android:textStyle="bold"
                           android:layout_gravity="center"
                           android:gravity="center|left"
+                          android:layout_centerVertical="true"
                           android:textColor="@color/text_color"
                           android:layout_height="wrap_content"/>
                 <TextView android:layout_width="wrap_content"
@@ -208,6 +206,7 @@
                           android:gravity="center"
                           android:layout_alignParentRight="true"
                           android:textStyle="bold"
+                          android:layout_centerVertical="true"
                           android:id="@+id/mine_bank_card_num_two"
                           android:text="已绑定0张"
                           android:layout_marginRight="5dp"

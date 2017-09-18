@@ -10,7 +10,7 @@
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            layout="@layout/top"/>
+            layout="@layout/top_liner"/>
     <!-- head结束 -->
 
     <EditText

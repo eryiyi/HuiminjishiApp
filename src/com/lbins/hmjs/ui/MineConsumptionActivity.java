@@ -105,7 +105,7 @@ public class MineConsumptionActivity extends BaseActivity implements View.OnClic
     }
 
     void initDataPackage(){
-        countJb.setText("消费积分："+ (minePackage.getPackage_money()==null?"":minePackage.getPackage_money()));
+        countJb.setText("消费积分："+ (minePackage.getPackage_money()==null?"0":minePackage.getPackage_money()));
     }
 
     private void initView() {
@@ -113,7 +113,7 @@ public class MineConsumptionActivity extends BaseActivity implements View.OnClic
 
         search_null = (ImageView) this.findViewById(R.id.search_null);
         this.findViewById(R.id.back).setOnClickListener(this);
-        this.findViewById(R.id.right_btn).setVisibility(View.GONE);
+        this.findViewById(R.id.btn_right).setVisibility(View.GONE);
         title = (TextView) this.findViewById(R.id.title);
         title.setText("我的消费记录");
         lstv = (PullToRefreshListView) this.findViewById(R.id.lstv);

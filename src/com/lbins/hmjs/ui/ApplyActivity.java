@@ -69,7 +69,7 @@ public class ApplyActivity extends BaseActivity implements View.OnClickListener 
         setContentView(R.layout.apply_activity);
 
         this.findViewById(R.id.back).setOnClickListener(this);
-        this.findViewById(R.id.right_btn).setVisibility(View.GONE);
+        this.findViewById(R.id.btn_right).setVisibility(View.GONE);
         title = (TextView) this.findViewById(R.id.title);
         title.setText("申请入驻");
         shanghuming = (EditText) this.findViewById(R.id.shanghuming);

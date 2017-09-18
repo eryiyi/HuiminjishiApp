@@ -191,8 +191,8 @@ public class MinePackageActivity extends BaseActivity implements View.OnClickLis
     }
 
     void initDataPackage(){
-        mine_money.setText("￥"+ (minePackage.getPackage_money()==null?"":minePackage.getPackage_money()));
-        mine_jinbi_num.setText("￥"+ (minePackage.getPackage_money()==null?"":minePackage.getPackage_money()));
+        mine_money.setText("￥"+ (minePackage.getPackage_money()==null?"0":minePackage.getPackage_money()));
+        mine_jinbi_num.setText("￥"+ (minePackage.getPackage_money()==null?"0":minePackage.getPackage_money()));
     }
 
     @Override

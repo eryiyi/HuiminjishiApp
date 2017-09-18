@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
@@ -82,7 +84,7 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
 
         lstv = (PullToRefreshGridView) view.findViewById(R.id.lstv);
         adapter = new ItemTuijianPeopleAdapter(lists, getActivity());
-
+        lstv.getRefreshableView().setSelector(new ColorDrawable(Color.TRANSPARENT));
         lstv.setMode(PullToRefreshBase.Mode.BOTH);
         lstv.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<GridView>() {
             @Override

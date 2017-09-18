@@ -691,6 +691,7 @@ public class DetailPaopaoGoodsActivity extends BaseActivity implements MenuPopMe
                                         initData();
                                     }else {
                                         Toast.makeText(DetailPaopaoGoodsActivity.this, "店铺信息尚未完善，逛逛其他店铺吧", Toast.LENGTH_SHORT).show();
+                                        finish();
                                     }
                                 } else {
                                     Toast.makeText(DetailPaopaoGoodsActivity.this, R.string.get_data_error, Toast.LENGTH_SHORT).show();
@@ -1086,7 +1087,7 @@ public class DetailPaopaoGoodsActivity extends BaseActivity implements MenuPopMe
                         String title =  paopaoGoods.getName()==null?"":paopaoGoods.getName();
                         String content = paopaoGoods.getName()==null?"":paopaoGoods.getName();
                         UMImage image = new UMImage(DetailPaopaoGoodsActivity.this, paopaoGoods.getCover());
-                        String url = InternetURL.SHARE_GOODS_DETAIL_URL + "?id=" + paopaoGoods.getId();
+                        String url = InternetURL.UPDATE_URL;
 
                      /*无自定按钮的分享面板*/
                         mShareAction = new ShareAction(DetailPaopaoGoodsActivity.this).setDisplayList(

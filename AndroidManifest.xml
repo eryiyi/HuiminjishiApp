@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.lbins.hmjs"
           xmlns:tools="http://schemas.android.com/tools"
-          android:versionCode="1"
-          android:versionName="1.0.0">
-    <uses-sdk android:minSdkVersion="10"   tools:overrideLibrary="com.easemob.redpacket"/>
+          android:versionCode="4"
+          android:versionName="1.0.4">
+    <uses-sdk android:minSdkVersion="10" tools:overrideLibrary="com.easemob.redpacket"/>
 
     <!-- 允许程序打开网络sockets(必选配置) -->
     <uses-permission android:name="android.permission.INTERNET" />

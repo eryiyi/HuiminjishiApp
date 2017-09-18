@@ -64,7 +64,7 @@ public class MineAddressActivity extends BaseActivity implements View.OnClickLis
     private void initView() {
         search_null = (ImageView) this.findViewById(R.id.search_null);
         this.findViewById(R.id.back).setOnClickListener(this);
-        this.findViewById(R.id.right_btn).setVisibility(View.GONE);
+        this.findViewById(R.id.btn_right).setVisibility(View.GONE);
         title = (TextView) this.findViewById(R.id.title);
         title.setText("我的收货地址");
 

@@ -8,10 +8,9 @@
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"
             android:layout_height="wrap_content"
-            layout="@layout/top"/>
+            layout="@layout/top_liner"/>
 
     <TextView android:layout_width="wrap_content"
-              android:text="通用积分：1000"
               android:layout_gravity="center_horizontal"
               android:textColor="@color/red"
               android:padding="8dp"

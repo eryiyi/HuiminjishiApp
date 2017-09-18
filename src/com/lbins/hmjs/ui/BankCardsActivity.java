@@ -47,7 +47,7 @@ public class BankCardsActivity extends BaseActivity implements View.OnClickListe
         setContentView(R.layout.bank_card_activity);
         registerBoradcastReceiver();
         this.findViewById(R.id.back).setOnClickListener(this);
-        this.findViewById(R.id.right_btn).setVisibility(View.GONE);
+        this.findViewById(R.id.btn_right).setVisibility(View.GONE);
         this.findViewById(R.id.btn_add_bank_card).setOnClickListener(this);
         title = (TextView) this.findViewById(R.id.title);
         title.setText("选择银行卡");

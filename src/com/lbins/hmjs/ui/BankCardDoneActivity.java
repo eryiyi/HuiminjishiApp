@@ -129,7 +129,7 @@ public class BankCardDoneActivity extends BaseActivity implements View.OnClickLi
 
     private void initView() {
         this.findViewById(R.id.back).setOnClickListener(this);
-        this.findViewById(R.id.right_btn).setVisibility(View.GONE);
+        this.findViewById(R.id.btn_right).setVisibility(View.GONE);
         title = (TextView) this.findViewById(R.id.title);
         title.setText("绑定/解绑银行卡");
         btn_one= (TextView) this.findViewById(R.id.btn_one);

@@ -2,9 +2,9 @@ package com.lbins.hmjs.base;
 
 public class InternetURL {
 //    public static final String INTERNAL =  "http://114.215.121.7:8085/";
-//    public static final String INTERNAL =  "http://www.shandongguiren.com/";
+    public static final String INTERNAL =  "http://www.shandongguiren.com/";
 //    public static final String INTERNAL =  "http://157j1274e3.iask.in/";
-    public static final String INTERNAL =  "http://192.168.0.100:8080/";
+//    public static final String INTERNAL =  "http://192.168.0.100:8080/";
 
     public static final String QINIU_URL =  "http://oo4c4r583.bkt.clouddn.com/";
     //更新链接
@@ -382,4 +382,7 @@ public class InternetURL {
     public static final String appGetLoadPics = INTERNAL + "appGetLoadPics.do";
     //获得定向卡广告列表
     public static final String appGetDxkAds = INTERNAL + "appGetDxkAds.do";
+
+    //会员微信支付的认证
+    public static final String orderSaveWxEmpRz = INTERNAL + "orderSaveWxEmpRz.do";
 }

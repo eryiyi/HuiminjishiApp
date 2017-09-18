@@ -63,7 +63,7 @@ public class WebViewActivity extends BaseActivity implements View.OnClickListene
         this.findViewById(R.id.back).setOnClickListener(this);
         this.findViewById(R.id.right_btn).setVisibility(View.GONE);
         title = (TextView) this.findViewById(R.id.title);
-        title.setText("美人美吧");
+        title.setText("丫丫保健");
 
         detail_webview = (WebView) this.findViewById(R.id.detail_webview);
     }

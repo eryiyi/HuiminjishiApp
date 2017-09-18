@@ -132,15 +132,19 @@ public class FourFragment extends BaseFragment implements View.OnClickListener  
         if(!StringUtil.isNullOrEmpty(getGson().fromJson(getSp().getString("cityName", ""), String.class))){
             address.setText(getGson().fromJson(getSp().getString("cityName", ""), String.class));
         }
-        if(!StringUtil.isNullOrEmpty(getGson().fromJson(getSp().getString("sign", ""), String.class))){
-            sign.setText(getGson().fromJson(getSp().getString("sign", ""), String.class));
-        }
 
-        if("0".equals(getGson().fromJson(getSp().getString("sign", ""), String.class))){
+
+        if("0".equals(getGson().fromJson(getSp().getString("rolestate", ""), String.class))){
             //技师
             is_state.setText("技师");
+            if(!StringUtil.isNullOrEmpty(getGson().fromJson(getSp().getString("yqnum", ""), String.class))){
+                sign.setText("邀请码：" + getGson().fromJson(getSp().getString("yqnum", ""), String.class));
+            }
         }else{
             is_state.setText("会员");
+            if(!StringUtil.isNullOrEmpty(getGson().fromJson(getSp().getString("sign", ""), String.class))){
+                sign.setText(getGson().fromJson(getSp().getString("sign", ""), String.class));
+            }
         }
         if(!StringUtil.isNullOrEmpty(getGson().fromJson(getSp().getString("rzstate2", ""), String.class))){
             if("1".equals(getGson().fromJson(getSp().getString("rzstate2", ""), String.class))){
@@ -206,6 +210,7 @@ public class FourFragment extends BaseFragment implements View.OnClickListener  
         view.findViewById(R.id.liner_share).setOnClickListener(this);
         view.findViewById(R.id.liner_set).setOnClickListener(this);
         view.findViewById(R.id.liner_friends).setOnClickListener(this);
+        view.findViewById(R.id.liner_package).setOnClickListener(this);
         cover.setOnClickListener(this);
         sign.setOnClickListener(this);
         btn_right.setOnClickListener(this);
@@ -293,6 +298,13 @@ public class FourFragment extends BaseFragment implements View.OnClickListener  
             {
                 //通讯录
                 Intent intent =  new Intent(getActivity(), MineFriendsActivity.class);
+                startActivity(intent);
+            }
+                break;
+            case R.id.liner_package:
+            {
+                //钱包
+                Intent intent = new Intent(getActivity() , MinePackageActivity.class);
                 startActivity(intent);
             }
                 break;
